@@ -6,7 +6,7 @@ html,body {
 }
 
 .header {
-    max-height: 120px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +99,7 @@ html,body {
 }
 
 .menu {
+    max-height: 120px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
