@@ -1,1 +1,68 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерфейс</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="profile">
+            <div class="avatar-container">
+                <img src="avatar-placeholder.png" alt="Аватар" class="avatar">
+                <div class="level">97</div>
+                <div class="trophy">🏆<span>250</span></div>
+            </div>
+            <div class="name">Герасько Никита</div>
+        </div>
+        <div class="resources">
+            <div class="resource">
+                <span class="icon">👑</span>
+                <span class="value">16</span>
+                <button class="plus" onclick="handleButtonClick('Добавить короны')">+</button>
+            </div>
+            <div class="resource">
+                <span class="icon">💰</span>
+                <span class="value">309</span>
+                <button class="plus" onclick="handleButtonClick('Добавить монеты')">+</button>
+            </div>
+        </div>
+    </div>
+    <div class="quick-game" onclick="handleButtonClick('Быстрая игра')">Быстрая игра</div>
+    <div class="menu">
+        <div class="menu-item" onclick="handleButtonClick('Турниры')">
+            <span>Турниры</span>
+            <div class="badge">1 м.</div>
+        </div>
+        <div class="menu-item" onclick="handleButtonClick('Новости')">Новости <div class="new-label">NEW!</div></div>
+        <div class="menu-item" onclick="handleButtonClick('Друзья')">Друзья</div>
+        <div class="menu-item" onclick="handleButtonClick('Предметы')">Предметы <span class="count">3</span></div>
+        <div class="menu-item" onclick="handleButtonClick('Доска почета')">Доска почета</div>
+        <div class="menu-item" onclick="handleButtonClick('Достижения')">Достижения <span class="progress">11/58</span></div>
+        <div class="menu-item" onclick="handleButtonClick('Настройки')">Настройки</div>
+        <div class="menu-item" onclick="handleButtonClick('Поделиться')">Поделиться</div>
+        <div class="menu-item" onclick="handleButtonClick('Правила')">Правила</div>
+        <div class="menu-item" onclick="handleButtonClick('Ещё игры')">Ещё игры <div class="new-label">NEW!</div></div>
+    </div>
+    <div class="footer">
+        <div class="tab active" onclick="handleButtonClick('Профиль')">
+            <span class="tab-icon">♣</span>
+            <span class="tab-text">Профиль</span>
+        </div>
+        <div class="tab" onclick="handleButtonClick('Открытые')">
+            <span class="tab-icon">♥</span>
+            <span class="tab-text">Открытые</span>
+        </div>
+        <div class="tab" onclick="handleButtonClick('Приватные')">
+            <span class="tab-icon">♠</span>
+            <span class="tab-text">Приватные</span>
+        </div>
+        <div class="tab" onclick="handleButtonClick('Создать игру')">
+            <span class="tab-icon">♦</span>
+            <span class="tab-text">Создать игру</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
