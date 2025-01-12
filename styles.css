@@ -12,9 +12,9 @@ html,body {
     padding: 10px 15px;
     background-color: #ffffff;
     border-bottom: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-shadow: 0 2px 5px rgb(43 61 130);
     
+
 }
 
 .profile {
