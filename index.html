@@ -67,10 +67,12 @@
         
         const menu = document.getElementById('menu');
         const body = document.getElementById('body');
+        const quick_game = document.getElementById('quick-game');
         const footer = document.getElementById('footer');
+        const quick_gameHeight = quick_game.offsetHeight;
         const footerHeight = footer.offsetHeight;
 
-        menu.style.height = `calc(100vh - ${(footerHeight)}px)`
+        menu.style.height = `calc(100vh - ${(footerHeight+quick_gameHeight)}px)`
 
         
     </script>
