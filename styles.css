@@ -105,6 +105,7 @@ html,body {
     padding: 15px;
     background-color: #2b5d82;
     color: white;
+    overflow: auto;
 }
 
 .menu-item {
