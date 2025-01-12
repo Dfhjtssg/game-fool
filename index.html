@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дурак</title>
+    <title>Интерфейс</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="header">
+<body id="body">
+    <div id="header" class="header">
         <div class="profile">
             <div class="avatar-container">
                 <img src="avatar-placeholder.png" alt="Аватар" class="avatar">
@@ -29,23 +29,23 @@
             </div>
         </div>
     </div>
-    <div class="quick-game" onclick="handleButtonClick('Быстрая игра')">Быстрая игра</div>
-    <div class="menu">
+    <div id="quick-game" class="quick-game" onclick="handleButtonClick('Быстрая игра')">Быстрая игра</div>
+    <div id="menu" class="menu">
         <div class="menu-item" onclick="handleButtonClick('Турниры')">
             <span>Турниры</span>
-            <div class="badge">1 м.</div>
+            <div class="badge"></div>
         </div>
-        <div class="menu-item" onclick="handleButtonClick('Новости')">Новости <div class="new-label">NEW!</div></div>
+        <div class="menu-item" onclick="handleButtonClick('Новости')">Новости </div>
         <div class="menu-item" onclick="handleButtonClick('Друзья')">Друзья</div>
-        <div class="menu-item" onclick="handleButtonClick('Предметы')">Предметы <span class="count">3</span></div>
+        <div class="menu-item" onclick="handleButtonClick('Предметы')">Предметы <span class="count"></span></div>
         <div class="menu-item" onclick="handleButtonClick('Доска почета')">Доска почета</div>
         <div class="menu-item" onclick="handleButtonClick('Достижения')">Достижения <span class="progress">11/58</span></div>
         <div class="menu-item" onclick="handleButtonClick('Настройки')">Настройки</div>
         <div class="menu-item" onclick="handleButtonClick('Поделиться')">Поделиться</div>
         <div class="menu-item" onclick="handleButtonClick('Правила')">Правила</div>
-        <div class="menu-item" onclick="handleButtonClick('Ещё игры')">Ещё игры <div class="new-label">NEW!</div></div>
+        <div class="menu-item" onclick="handleButtonClick('Ещё игры')">Ещё игры </div>
     </div>
-    <div class="footer">
+    <div  id="footer" class="footer">
         <div class="tab active" onclick="handleButtonClick('Профиль')">
             <span class="tab-icon">♣</span>
             <span class="tab-text">Профиль</span>
@@ -63,6 +63,16 @@
             <span class="tab-text">Создать игру</span>
         </div>
     </div>
+    <script>
+        
+        const body = document.getElementById('body');
+        const footer = document.getElementById('footer');
+        const footerHeight = footer.offsetHeight;
+
+        body.style.height = `calc(100vh - ${(footerHeight)}px)`
+
+        
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
