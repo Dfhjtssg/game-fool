@@ -64,7 +64,6 @@
         </div>
     </div>
     <script>
-        
         const header = document.getElementById('header');
         const menu = document.getElementById('menu');
         const body = document.getElementById('body');
@@ -75,7 +74,7 @@
         const quick_gameHeight = quick_game.offsetHeight;
         const footerHeight = footer.offsetHeight;
 
-        menu.style.height = `calc(100% - ${(footerHeight+quick_gameHeight+headerHeight)}px)`
+        menu.style.height =body.offsetHeight-(footerHeight+quick_gameHeight+headerHeight)
 
         
     </script>
