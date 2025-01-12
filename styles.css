@@ -5,12 +5,15 @@ body {
 }
 
 .header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
     background-color: #ffffff;
     border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .profile {
@@ -114,45 +117,38 @@ body {
     color: #333;
 }
 
-.badge, .new-label {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 2px 5px;
-    border-radius: 50%;
-}
-
-.new-label {
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 15px;
-}
-
-.count, .progress {
-    font-size: 14px;
-    font-weight: bold;
-    color: #555;
-}
-
 .footer {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     background-color: white;
     border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     flex: 1;
     font-size: 16px;
     font-weight: bold;
     color: #333;
     padding: 5px;
+    cursor: pointer;
+}
+
+.tab-icon {
+    font-size: 20px;
+}
+
+.tab-text {
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .tab.active {
