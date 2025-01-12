@@ -19,12 +19,12 @@
         <div class="resources">
             <div class="resource">
                 <span class="icon">👑</span>
-                <span class="value">16</span>
+                <span class="value">0</span>
                 <button class="plus" onclick="handleButtonClick('Добавить короны')">+</button>
             </div>
             <div class="resource">
                 <span class="icon">💰</span>
-                <span class="value">309</span>
+                <span class="value">0</span>
                 <button class="plus" onclick="handleButtonClick('Добавить монеты')">+</button>
             </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="menu-item" onclick="handleButtonClick('Друзья')">Друзья</div>
         <div class="menu-item" onclick="handleButtonClick('Предметы')">Предметы <span class="count"></span></div>
         <div class="menu-item" onclick="handleButtonClick('Доска почета')">Доска почета</div>
-        <div class="menu-item" onclick="handleButtonClick('Достижения')">Достижения <span class="progress">11/58</span></div>
+        <div class="menu-item" onclick="handleButtonClick('Достижения')">Достижения <span class="progress">0/58</span></div>
         <div class="menu-item" onclick="handleButtonClick('Настройки')">Настройки</div>
         <div class="menu-item" onclick="handleButtonClick('Поделиться')">Поделиться</div>
         <div class="menu-item" onclick="handleButtonClick('Правила')">Правила</div>
@@ -63,7 +63,16 @@
             <span class="tab-text">Создать игру</span>
         </div>
     </div>
-   
+    <script>
+        
+        const body = document.getElementById('body');
+        const footer = document.getElementById('footer');
+        const footerHeight = footer.offsetHeight;
+
+        body.style.height = `calc(100vh - ${(footerHeight)}px)`
+
+        
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
