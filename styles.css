@@ -101,7 +101,7 @@ html,body {
 }
 
 .menu {
-    max-height: 500px; 
+     
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
